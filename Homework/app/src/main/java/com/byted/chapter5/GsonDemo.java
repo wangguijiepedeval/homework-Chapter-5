@@ -8,7 +8,9 @@ import com.google.gson.reflect.TypeToken;
 import java.util.ArrayList;
 import java.util.List;
 
+// 使用 Gson 库来生成 JSON 字符串和解析 JSON 字符串。
 public class GsonDemo {
+    // 将一个 Java 对象序列化成 JSON 字符串
     public static void generateGsonString() {
         Gson gson = new Gson();
         People people = new People();
@@ -23,6 +25,7 @@ public class GsonDemo {
         Log.d("GsonDemo", s);
     }
 
+    // 将一个 JSON 字符串反序列化成对应的 Java 对象
     public static void parseGsonString(){
 
         String s="[\n" +

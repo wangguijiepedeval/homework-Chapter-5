@@ -5,10 +5,13 @@ import com.google.gson.annotations.SerializedName;
 import java.util.List;
 
 class ArticleResponse {
+    // 请求状态码
     @SerializedName("errorCode")
     public int errorCode;
+    // 错误信息
     @SerializedName("errorMsg")
     public String errorMsg;
+    // 包含一组 Article 对象的列表，是本次网络请求得到的文章列表
     @SerializedName("data")
     List<Article> articles;
 

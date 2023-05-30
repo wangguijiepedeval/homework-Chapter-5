@@ -29,6 +29,7 @@ public class JsonDemo {
 //          ]
 //    }
 
+    // 生成JSON字符串
     public static void generateJsonString() {
         try {
             JSONObject jsonObject = new JSONObject();
@@ -49,6 +50,7 @@ public class JsonDemo {
 
     }
 
+    // 解析JSON字符串
     public static void parseJsonString() {
         String s = "{\"temp\":{\"min\":11.34,\"max\":19.01},\"success\":true,\"notification_user_id\":[\"Adam\",\"Bob\",\"John\"]}";
         try {

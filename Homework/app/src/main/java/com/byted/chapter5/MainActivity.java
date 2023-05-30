@@ -16,6 +16,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+// 使用Retrofit库进行网络请求并展示数据
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private MyAdapter mAdapter;
     private List<ArticleResponse.Article> mArticles;
 
+    // 创建MyAdapter对象并将其设置为RecyclerView的适配器
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         getData();
     }
 
+    // 使用来源于 https://wanandroid.com/ 网站提供的数据（API）
     private void getData() {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://wanandroid.com/")
